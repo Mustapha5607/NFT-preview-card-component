@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+:root {
+    --blue-500: hsl(215, 51%, 70%);
+    --cyan-400: hsl(178, 100%, 50%);
+    --blue-950-main-bg: hsl(217, 54%, 11%);
+    --blue-900-card-bg: hsl(216, 50%, 16%);
+    --blue-800-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--blue-950-main-bg);
+}
+
+.card {
+    width: 375px;
+    background: var(--blue-900-card-bg);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.card-header {
+    margin-bottom: 20px;
+}
+
+.card-header img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+p {
+    color: var(--blue-500);
+}
+
+.card-price {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--blue-800-line);
+}
+
+.price, .timeleft {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.price img, .timeleft img {
+    width: auto;
+    height: 20px;
+}
+
+.price p {
+    color: var(--cyan-400);
+    font-weight: 700;
+}
+
+.card-footer {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.card-footer img {
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+
+.card-footer span {
+    color: var(--white);
+}
+
+.filter {
+    width: 100%;
+}
+
+/* ACTIVE STATES */
+
+h1:hover {
+    color: var(--cyan-400);
+    cursor: pointer;
+}
+
+.card-footer span:hover {
+     color: var(--cyan-400);
+    cursor: pointer;
+}
